@@ -28,7 +28,7 @@ const HeroSection = () => {
 
   <Typewriter
   options={{
-    strings: ['Hello!','This is Nischal'],
+    strings: ['Hello!','This is Nischal','Full stack developer'],
     autoStart: true,
     loop: true,
   }}

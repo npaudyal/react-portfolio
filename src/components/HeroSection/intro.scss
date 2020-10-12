@@ -1,21 +1,24 @@
+body, body * {
+  font-family: 'Source Code Pro', monospace;
 
+}
 
 .content {
   position: absolute;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -550%);
   height: 40px;
   overflow: hidden;
-  
-  font-family: 'Lato', sans-serif;
-  font-size: 35px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
   line-height: 40px;
   color: #ecf0f1;
   
   &__container {
     font-weight: 600;
-   
+    width: 550px;
     height: 40px;
     padding: 0 80px;
     
