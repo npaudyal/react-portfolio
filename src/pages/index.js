@@ -4,6 +4,8 @@ import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection';
 import {homeObjOne} from '../components/InfoSection/data'
+import Progress from '../components/SkillSection'
+import Projects from '../components/Projects'
 
 const Home = () => {
 
@@ -19,6 +21,10 @@ const Home = () => {
           <Navbar toggle={toggle}/>  
           <HeroSection />
           <InfoSection {...homeObjOne} />
+            
+            <Progress done = "70" text="JavaScript" color= "green"/>
+            <Projects></Projects>
+            
         </>
     )
 }
