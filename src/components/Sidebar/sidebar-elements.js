@@ -25,6 +25,7 @@ export const CloseIcon = styled(FaTimes)`
 
 `;
 
+
 export const Icon = styled.div `
 
     position:absolute;

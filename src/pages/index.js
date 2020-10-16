@@ -6,6 +6,9 @@ import InfoSection from '../components/InfoSection';
 import {homeObjOne} from '../components/InfoSection/data'
 import Progress from '../components/SkillSection'
 import Projects from '../components/Projects'
+import Stack from '../components/project-stack';
+import ParticlesBackground from '../components/particleComponent'
+
 
 const Home = () => {
 
@@ -17,14 +20,14 @@ const Home = () => {
 
     return (
         <>
+        <ParticlesBackground />
+        
+        
           <Sidebar isOpen ={isOpen} toggle ={toggle}/>
           <Navbar toggle={toggle}/>  
           <HeroSection />
-          <InfoSection {...homeObjOne} />
-            
-            <Progress done = "70" text="JavaScript" color= "green"/>
-            <Projects></Projects>
-            
+       
+             
         </>
     )
 }

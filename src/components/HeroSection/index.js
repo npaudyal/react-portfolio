@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import Video from '../../video/video.mp4'
-import {HeroContainer, HeroBg, VideoBg, HeroBtnWrapper, HeroContent, HeroH1, HeroP, ArrowForward, ArrowRight} from './HeroElements'
+import {HeroContainer, HeroBtnWrapper, HeroContent, ArrowForward, ArrowRight} from './HeroElements'
 import {Button} from '../ButtonElement'
 import Typewriter from 'typewriter-effect';
 import './intro.scss';
@@ -16,10 +15,12 @@ const HeroSection = () => {
         setHover(!hover)
     }
     return (
+        <>
+        
+       
         <HeroContainer>
-            <HeroBg>
-                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
-             </HeroBg>
+        
+           
              <HeroContent>
 
              
@@ -34,12 +35,6 @@ const HeroSection = () => {
   }}
 />
     
-    {/* <ul className="content__container__list">
-      <li className="content__container__list__item">world !</li>
-      <li className="content__container__list__item">bob !</li>
-      <li className="content__container__list__item">users !</li>
-      <li className="content__container__list__item">everybody</li>
-    </ul> */}
   </div>
 </div>
 
@@ -52,8 +47,11 @@ const HeroSection = () => {
                         Terminal {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
-            </HeroContent>
+                </HeroContent>
+
         </HeroContainer>
+        
+        </>
     )
 
 

@@ -1,7 +1,7 @@
 export const homeObjOne = {
 
     id: 'about',
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc:true,
     topLine: 'Nischal Paudyal',
