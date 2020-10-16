@@ -7,6 +7,8 @@ import {Name,listItem,listContainer, SubText, NameWrapper, CardContain, Para, Ca
 import {GoLocation} from 'react-icons/go'
 import {AiOutlinePhone} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'
+import './index.css';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 
 const ContainerNew = styled.div`
@@ -46,13 +48,33 @@ const ContactContainer = styled.div`
     display:flex;
     justify-content:center;
     font-size: 24px;
-    font-weight:600;
+    font-weight:300;
     margin-bottom:50px;
 `
 
+
+const SocialContainer = styled.div`
+    
+    width:100%;
+    padding-top:5%;
+    padding-bottom:5%;
+    height:100px;
+    padding:5px;
+    
+   
+    padding:5px;
+   margin:20px;
+   
+`
+const SocialItem = styled.div`
+
+display:inline-block;
+    
+`
+
+
 const GroupContainer = styled.div`
 
-   
     height:40%;
     max-width:450px;
     margin:0px;
@@ -180,12 +202,36 @@ const About = () => {
                 <ContentStyle>npaudyal01@gmail.com</ContentStyle>
 
                 </Group>
+
+               
                 
                 
             </GroupContainer>
+            <SocialContainer>
             
-            
+            <ul className="social-media-list">
+            <SocialItem>
+          <li><a href="#" target="_blank" className="contact-icon">
+            <FaGithub/></a>
+          </li>
+         
+          <li><a href="#" target="_blank" className="contact-icon">
+            <FaInstagram /></a>
+          </li>
+          
 
+          <li><a href="#" target="_blank" className="contact-icon">
+            <FaLinkedin /></a>
+          </li>
+                   
+          </SocialItem>
+        
+        </ul>
+
+
+            </SocialContainer>
+            
+          
                    
             </CardNew>
         </ContainerNew>
