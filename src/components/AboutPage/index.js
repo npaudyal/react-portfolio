@@ -151,25 +151,7 @@ const About = () => {
                 Interested in any web development spectrum and looking forward to work with ambitious people on ambitious projects.
             </Para>
             </NameWrapper>
-        {/* <CardContain>
-        <CardWrapper>
-            <Container>
-                CONTACT
-                
-            
-            </Container>
-            <listContainer>
-            <listWrapper>
-            <listItem>
-                Location
-            </listItem>
-            </listWrapper>
-            
-        </listContainer>
        
-            
-        </CardWrapper>
-        </CardContain> */}
 
         <ContainerNew>
             <CardNew>
@@ -211,7 +193,7 @@ const About = () => {
             
             <ul className="social-media-list">
             <SocialItem>
-          <li><a href="#" target="_blank" className="contact-icon">
+          <li><a href="https://github.com/npaudyal" className="contact-icon">
             <FaGithub/></a>
           </li>
          

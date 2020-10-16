@@ -9,7 +9,7 @@ $background-color: #1a1a1a;
 $progressbar-title-color: #fff;
 
 $red: #c0392b;
-$blue: #1199ff;
+$blue: #0d72b6;
 $purple: #9b59b6;
 $orange: #ffa500;
 $green: #27ae60;
@@ -41,14 +41,17 @@ html,body{
 
 .skills-bar-container{
   position: relative;
-  width: 40%;
+  width: 30%;
   min-width: 300px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-145%, 100%);
   list-style:none;
+  padding: 10px;
+
   
+
   li{
     position: relative;
     width: 100%;
@@ -110,16 +113,16 @@ html,body{
         animation-delay: $animation-delay*3;
       }
 
-      #progress-php{
-        -webkit-animation-name: progress-php;
-        animation-name: progress-php;
+      #progress-node{
+        -webkit-animation-name: progress-node;
+        animation-name: progress-node;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*4;
       }
 
-      #progress-angular{
-        -webkit-animation-name: progress-angular;
-        animation-name: progress-angular;
+      #progress-react{
+        -webkit-animation-name: progress-react;
+        animation-name: progress-react;
         -webkit-animation-delay: $animation-delay*5;
         animation-delay: $animation-delay*5;
       }
@@ -136,17 +139,17 @@ html,body{
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@-webkit-keyframes progress-node{0%{width: 0%;} 100%{ width: 55%;}}
+@-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
 
 @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
 @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@-moz-keyframes progress-node{0%{width: 0%;} 100%{ width: 55%;}}
+@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
 
-@keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-css{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 85%;}}
+@keyframes progress-node{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
