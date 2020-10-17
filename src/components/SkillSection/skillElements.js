@@ -10,12 +10,13 @@ export const SkillsContainer = styled.div`
 		
 
 `
-
-export const TagCloudContainer = styled.div`
-
-
-
+export const GlobeContainer = styled.div`
+	justify-content:right;
+	padding-top:0;
+	position: absolute;
+	padding-left:30%;
+	padding-right:70%;
+	border-radius:50%;
+	
+	
 `
-
-
-

@@ -9,8 +9,8 @@ function App() {
     
    <Router>
     {/* <Home /> */}
-    
-    {/* <About /> */}
+{/*     
+    <About /> */}
 
     <Skills />
 
