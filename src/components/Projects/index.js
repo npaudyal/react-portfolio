@@ -1,44 +1,120 @@
-import React from 'react'
-
-import Icon1 from '../../images/svg-1.svg'
-import Icon2 from '../../images/svg-2.svg'
-import Icon3 from '../../images/svg-3.svg'
-import {ServicesContainer, ServicesH1, ServicesH2,ServicesP, ServicesCard, ServicesWrapper, ServicesIcon} from './ProjectsElements'
+import React, {useState}from 'react'
+import ParticlesBackground from '../particleComponent';
+import Sidebar from '../Sidebar';
+import Navbar from '../navbar';
+import { ProjectsContainer } from './ProjectElements';
+import ParallaxCard from 'react-parallax-card';
 
 const Projects = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+
+
     return (
         <>
-         <ServicesContainer id="services">
-        <ServicesH1>My Works</ServicesH1>
-           
-     
+        <ParticlesBackground />
+        
+        
+        <Sidebar isOpen ={isOpen} toggle ={toggle}/>
+        <Navbar toggle={toggle}/> 
+        <ProjectsContainer>
+        <ParallaxCard
+  
+  enableRotate
+  enableTransform
+  style={{ 
+      width: 240,
+      height: 240,
+       
+      
+      }}>
 
-            <ServicesWrapper>
-                <ServicesCard>
-                    <ServicesIcon src= {Icon1} />
-                    <ServicesH2>Blah Blah Blah</ServicesH2>
-                    <ServicesP>
-                        assakdahjiksdjaksd kasdj kasdjkasdjka aksdjaksdjakdjasdkjasd.
-                    </ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src= {Icon2} />
-                    <ServicesH2>Blah Blah Blah</ServicesH2>
-                    <ServicesP>
-                        assakdahjiksdjaksd kasdj kasdjkasdjka aksdjaksdjakdjasdkjasd.
-                    </ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src= {Icon3} />
-                    <ServicesH2>Blah Blah Blah</ServicesH2>
-                    <ServicesP>
-                        assakdahjiksdjaksd kasdj kasdjkasdjka aksdjaksdjakdjasdkjasd.
-                    </ServicesP>
-                </ServicesCard>
-            </ServicesWrapper> 
-         </ServicesContainer>
-         </>
- 
+  <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+  <div /><div /><div />
+
+
+  
+
+</ParallaxCard>
+<ParallaxCard
+  
+  enableRotate
+  enableTransform
+  style={{ width: 240, height: 240 }}>
+
+  <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+  <div /><div /><div />
+
+
+  
+
+</ParallaxCard>
+<ParallaxCard
+  
+  enableRotate
+  enableTransform
+  style={{ width: 240, height: 240 }}>
+
+  <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+  <div /><div /><div />
+
+
+  
+
+</ParallaxCard>
+<ParallaxCard
+  
+  enableRotate
+  enableTransform
+  style={{ width: 240, height: 240 }}>
+
+  <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+  <div /><div /><div />
+
+
+  
+
+</ParallaxCard>
+<ParallaxCard
+  
+  enableRotate
+  enableTransform
+  style={{ width: 240, height: 240 }}>
+
+  <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+  <div /><div /><div />
+
+
+  
+
+</ParallaxCard>
+<ParallaxCard
+  
+  enableRotate
+  enableTransform
+  style={{ width: 240, height: 240 }}>
+
+  <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+  <div /><div /><div />
+
+
+  
+
+</ParallaxCard>
+
+</ProjectsContainer>
+
+        </>
     )
 }
 
