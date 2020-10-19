@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 
-import ParticlesBackground from '../particleComponent';
 import Sidebar from '../Sidebar';
 import Navbar from '../navbar';
 
@@ -33,8 +32,8 @@ import './style.css'
 	const themeVars = theme === 'dark' ? {
 		app: {backgroundColor: '#333444'},
 		terminal: {boxShadow: '0 0 8px 2px rgba(255,255,255, 0.5)'},
-		window: {backgroundColor: '#403D42', color: '#F4F4F4'},
-		field: {backgroundColor: 'black', color: '#F4F4F4', fontWeight: '600'},
+		window: {backgroundColor: '#d6d1d1', color: '#F4F4F4'},
+		field: {backgroundColor: '#27292C', color: '#F4F4F4', fontWeight: '600'},
 		cursor: {animation : '1.02s blink-dark step-end infinite'}
 	} : {
 		app: {backgroundColor: '#ACA9BB'},
@@ -47,6 +46,7 @@ import './style.css'
 	return (
         
        <>
+	   
 	   <div className="wa">
 	 <Sidebar isOpen ={isOpen} toggle ={toggle}/> 
         <Navbar toggle={toggle}/>
@@ -292,10 +292,9 @@ class Field extends React.Component {
 				fieldHistory: [...state.fieldHistory, {
 					text: [
                         'All commands:',
-                        '',
 						...this.recognizedCommands
 							.sort((a, b) => a.command.localeCompare(b.command))
-							.map(({ command, purpose }) => `${command.toUpperCase()}${Array.from({length: 15 - command.length}, x => '.').join('')}${purpose}`),
+							.map(({ command, purpose }) => `${command} :\u00A0\u00A0\u00A0\u00A0\u00A0${purpose}`),
 						
 					],
 					hasBuffer: true
@@ -360,11 +359,11 @@ class Field extends React.Component {
 					'Built with MERN stack',
 					`Junior year project. It is a recipe building app with numerous other features`,
 					'',
-					'E-commerce',
+					'Ecommerce',
 					'Built with Node, Express, and MongoDB',
 					`A udemy project which is a simple e-commerce application with payment features using stripeJS.`,
 					'',
-					'Customer Tracker',
+					'CustomerTracker',
 					'Built with Java, Spring, Spring AOP, SQL.',
 					'A simple customer management app.'
 					
