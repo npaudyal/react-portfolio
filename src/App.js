@@ -5,6 +5,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import About from './components/AboutPage/index'
 import Skills from './components/SkillSection';
 import Projects from './components/Projects';
+import Term from './components/terminal';
 function App() {
   return (
     
@@ -15,8 +16,9 @@ function App() {
 
     {/* <Skills /> */}
 
-    <Projects />
+    {/* <Projects /> */}
 
+    <Term />
 
    </Router>
      
