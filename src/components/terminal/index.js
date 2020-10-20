@@ -3,26 +3,7 @@ import React, {useState} from 'react'
 import Sidebar from '../Sidebar';
 import Navbar from '../navbar';
 
-import './style.css'
-// const Terminal = () => {
-
-//     const [isOpen, setIsOpen] = useState(false);
-//     const toggle = () => {
-//         setIsOpen(!isOpen)
-//     }
-//     return (
-//         <>
-//         <ParticlesBackground />
-//         <Sidebar isOpen ={isOpen} toggle ={toggle}/>
-//         <Navbar toggle={toggle}/> 
-//         </>
-//     )
-// }
-
-// export default Terminal
-
-
-
+import './terminal.css'
  const Term = () => {
          const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
@@ -51,7 +32,7 @@ import './style.css'
 	 <Sidebar isOpen ={isOpen} toggle ={toggle}/> 
         <Navbar toggle={toggle}/>
 		</div>
-       <div className="app">
+       <div className="appa">
 	  
 
 	  
@@ -115,7 +96,7 @@ class Field extends React.Component {
          {
 			command: 'skills',
 			isMain: true,
-			purpose: 'Displays information about Nischal\'s skills as a developer.'
+			purpose: 'Displays information about Nischal\'s skills.'
 		}, {
 			command: 'contact',
 			isMain: true,
@@ -129,7 +110,7 @@ class Field extends React.Component {
          {
 			command: 'launch',
 			isMain: true,
-			purpose: 'Launches a specified project in a new tab or separate window.',
+			purpose: 'Launches a specified project in a new tab.',
 			help: [
 				'LAUNCH <TITLE>',
 				'Launches a specified project in a new tab.',
@@ -294,7 +275,8 @@ class Field extends React.Component {
                         'All commands:',
 						...this.recognizedCommands
 							.sort((a, b) => a.command.localeCompare(b.command))
-							.map(({ command, purpose }) => `${command} :\u00A0\u00A0\u00A0\u00A0\u00A0${purpose}`),
+							.map(({ command, purpose }) => `${command}${Array.from({length: 15 - command.length}, x => '').join('....')}${purpose}`),
+							'',
 						
 					],
 					hasBuffer: true

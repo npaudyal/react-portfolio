@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import {Link as LinkR} from 'react-router-dom';
-import {Link as LinkS} from 'react-scroll';
+import {NavLink as LinkR} from 'react-router-dom';
 import './index.css'
 
 
@@ -99,6 +98,7 @@ export const NavLinks = styled(LinkR)`
 
     &.active {
         border-bottom: 3px solid #01bf71;
+        
     }
     &:hover {
         font-weight:900;

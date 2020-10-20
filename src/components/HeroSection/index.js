@@ -32,7 +32,9 @@ const HeroSection = () => {
     strings: ['Hello!','This is Nischal','Full stack developer'],
     autoStart: true,
     loop: true,
+    
   }}
+  
 />
     
   </div>

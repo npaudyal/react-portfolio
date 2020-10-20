@@ -7,7 +7,7 @@ import {Name,listItem,listContainer, SubText, NameWrapper, CardContain, Para, Ca
 import {GoLocation} from 'react-icons/go'
 import {AiOutlinePhone} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'
-import './index.css';
+import './about.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 

@@ -3,9 +3,7 @@
 *::after {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-	font-size:16px;
-	
-	
+
 }
 :focus,
 :hover,
@@ -15,11 +13,11 @@
 body {
 	margin: 0;
 	overflow: hidden;
-	
+	font-size:16px;
 
 }
 
-.app {
+.appa {
 	height: 100vh;
 	display: flex;
 	background:black;
@@ -33,7 +31,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	max-width: 900px;
 	height: 550px;
-	
+	font-size:16px;
 	transition: .2s;
 }
 #window {

@@ -21,6 +21,7 @@ import { StackWrapper, StackContainer } from '../Projects/ProjectElements';
 
 
 const Projects = () => {
+  const githubHandler = () => (window.open('https://github.com/npaudyal'))
 
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
@@ -35,12 +36,12 @@ const Projects = () => {
         <StackWrapper>
         <figure className="snip1566">
   <img src= {Jodi} alt="sq-sample14" />
-  <figcaption><i className="ion-android-open"></i></figcaption>
-  <a href="github.com/npaudyal"></a>
+  <figcaption><i className="ion-android-open" onClick={githubHandler}></i></figcaption>
+  
 </figure>
 <figure className="snip1566"><img src={IDetector} alt="sq-sample17" />
   <figcaption><i className="ion-android-open"></i></figcaption>
-  <a href="#"></a>
+ 
 </figure>
 <figure className="snip1566"><img src={Scrumptious}alt="sq-sample19" />
   <figcaption><i className="ion-android-open"></i></figcaption>
