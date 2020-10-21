@@ -6,11 +6,13 @@ import About from './components/AboutPage/index'
 import Skills from './components/SkillSection';
 import Projects from './components/Projects';
 import Term from './components/terminal';
+import NewProject from './components/NewProject';
+import Slider from './components/NewProject';
 function App() {
   return (
     
    <Router>
-     <Switch>
+     {/* <Switch>
 
       <Route path="/" component={Home} exact />
       <Route path="/about" component={About} exact />
@@ -21,9 +23,10 @@ function App() {
 
 
      </Switch>
-    
+     */}
    
 
+    <Slider />
 
  
 
