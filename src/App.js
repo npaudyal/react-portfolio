@@ -12,18 +12,18 @@ function App() {
   return (
     
    <Router>
-     {/* <Switch>
+     <Switch>
 
-      <Route path="/" component={Home} exact />
+      {/* <Route path="/" component={Home} exact />
       <Route path="/about" component={About} exact />
       <Route path="/skills" component={Skills} exact />
       <Route path="/projects" component={Projects} exact />
-      <Route path="/terminal" component={Term} exact />
+      <Route path="/terminal" component={Term} exact /> */}
 
 
 
      </Switch>
-     */}
+    
    
 
     <Slider />

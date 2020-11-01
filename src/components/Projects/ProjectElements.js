@@ -69,9 +69,17 @@ export const StackWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
         
         padding:0 20px;
+        
         max-width:300px;
         
     }
+    @media screen and (max-width:375px) {
+        grid-template-columns: 1fr 1fr;
+        padding-top:0;
+        max-width:300px;
+        
+    }
+
 
 `
 

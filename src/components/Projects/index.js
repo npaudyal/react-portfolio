@@ -31,7 +31,8 @@ const Projects = () => {
         <>
         <ParticlesBackground />
         <Sidebar isOpen ={isOpen} toggle ={toggle}/>
-        <Navbar toggle={toggle}/> 
+        <Navbar toggle={toggle}/>
+        
         <StackContainer>
         <StackWrapper>
         <figure className="snip1566">
@@ -89,154 +90,7 @@ const Projects = () => {
 </figure>
 </StackWrapper>
 </StackContainer>
-        {/* <ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ 
-      width: 240,
-      height: 240,
        
-      
-      }}>
-
-  <img src= {Jodi} style={{ maxWidth: '100%', maxHeight: '100%' , borderRadius:'30px'}} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={IDetector} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Ecommerce} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Burger} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Insta} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Portfolio} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Customer} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={GRE} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Weather} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard>
-<ParallaxCard
-  
-  enableRotate
-  enableTransform
-  style={{ width: 240, height: 240 }}>
-
-  <img src={Task} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-  <div /><div /><div />
-
-
-  
-
-</ParallaxCard> */}
-
-
         </>
     )
 }
