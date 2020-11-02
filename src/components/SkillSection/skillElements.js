@@ -27,6 +27,16 @@ export const GlobeContainer = styled.div`
 	padding:0;
   
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+  
+  top:40%;
+  left: 0;
+  width: 100%;
+  height:80%;
+  padding:0;
+
+}
 	
 	
 `

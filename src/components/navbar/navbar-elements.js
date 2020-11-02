@@ -46,7 +46,11 @@ font-weight:600;
 
 &:hover {
     border-bottom: 1px solid white;
+    
     }
+
+
+    
 
 `;
 

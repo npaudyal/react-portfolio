@@ -44,6 +44,13 @@ box-shadow: 0 0 16px 0 rgba(255,255,255,0.2);
     
 }
 
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+
+width:70vw;
+height:30vh;
+
+}
+
 
 
 `
@@ -233,11 +240,11 @@ const About = () => {
     </div>
 </div>
 
-                <p style={{color:'#8c8686', fontFamily:'inherit', fontWeight:600}}>
+                <p className ="new-p" style={{color:'#8c8686', fontFamily:'inherit', fontWeight:600}}>
                 I am a senior majoring in Computer science and mathematics in the University of Mississippi. I am currently living in Johnston, IA. I am a well-organized person, problem solver, with high
                 attention to detail. I play piano, I am a fan of any sports.
                 </p>
-                <p style={{color:'#8c8686', fontFamily:'inherit', fontWeight:600}}>Interested in any web development spectrum and looking forward to work with ambitious people on ambitious projects.
+                <p className ="new-p" style={{color:'#8c8686', fontFamily:'inherit', fontWeight:600}}>Interested in any web development spectrum and looking forward to work with ambitious people on ambitious projects.
 </p>
 <p><div className="h2Style">{headClose}</div></p>
             </div>
