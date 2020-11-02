@@ -115,7 +115,7 @@
     width: 100%;
   }
   
-  .social-media-list li a {
+  .social-media-list li .contact-icon {
     color: #b7aaaa;
   }
   
@@ -159,7 +159,7 @@
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
+  .social-media-list li:hover .contact-icon {
     color: #111;
   }
   
@@ -200,52 +200,9 @@
     }
   }
   
-  @media screen and (max-width: 569px) {
-    #contact {
-      height: 1200px;
-      }
-    .section-header{
-      font-size: 50px;
-    }
-    .direct-contact-container, .form-wrapper {
-      float: none;
-      margin: 0 auto;
-    }  
-    .form-control, textarea {
-      max-width: 340px;
-      margin: 0 auto;
-    }
-    
-    .name, .email, textarea {
-      width: 280px;
-    } 
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 280px;
-    }  
-    .social-media-list {
-      left: 0;
-    }
-    .social-media-list li {
-      height: 55px;
-      width: 55px;
-      line-height: 55px;
-      font-size: 2rem;
-    }
-    .social-media-list li:after {
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-    }
-    
-  }
+ 
   
-  @media screen and (max-width: 410px) {
-    .send-button {
-      width: 99%;
-    }
-  }
-
+ 
   .section{
     display:flex;
     padding-top:5%;
@@ -278,6 +235,7 @@
 @media only screen and (max-width: 800px){
     .intro{
       width:80%;
+      
     }
   }
   @media (min-width: 480px) {
@@ -309,6 +267,7 @@
       font-size: 1.2rem;
       text-align: center;
       width: 7%;
+      
     }
   }
 
@@ -322,5 +281,6 @@
       font-size: 1.2rem;
       text-align: center;
       width: 7%;
+      
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu,
-     NavItem, NavLinks, NavBtn, profileIcon, NavBtnLink, Icon} from './navbar-elements';
+     NavItem, NavLinks, NavBtn,  NavBtnLink} from './navbar-elements';
 
 const Navbar = ({toggle}) => {
     return (

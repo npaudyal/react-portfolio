@@ -22,7 +22,7 @@ export const Cunt = styled.div`
     align-items:center;
 	padding-top:5%;
 	overflow-y:scroll;
-	height:200%;
+	overflow-x:hidden;
 
 
 `
@@ -35,9 +35,7 @@ const Slider = () => {
         setIsOpen(!isOpen)
     }
 
-    const newStyle = {
-        backgroundImage:`url(${Jodi})`
-    }
+    
 
     const jodiOpener = () => {
         window.open('https://play.google.com/store/apps/details?id=com.paudyal.merosathi')
@@ -72,7 +70,7 @@ const Slider = () => {
 <Cunt>
 <div className="wrapper1">
   <div className="cols1">
-			<div className="col1" ontouchstart="this.classList.toggle('hover');">
+			<div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Jodi})`}}>
 						<div className="inner1">
@@ -90,7 +88,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Scrumptious})`}}>
 						<div className="inner1">
@@ -106,7 +104,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1" >
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Ecommerce})`}}>
 						<div className="inner1">
@@ -123,7 +121,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${IDetector})`}}>
 						<div className="inner1">
@@ -140,7 +138,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Weather})`}}>
 						<div className="inner1">
@@ -157,7 +155,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Insta})`}}>
 						<div className="inner1">
@@ -174,7 +172,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Burger})`}}>
 						<div className="inner1">
@@ -191,7 +189,7 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+            <div className="col1">
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Customer})`}}>
 						<div className="inner1">
