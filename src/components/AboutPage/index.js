@@ -9,8 +9,8 @@ import {AiOutlinePhone} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'
 import './about.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
-
+import './font.css';
+import './name.scss'
 const ContainerNew = styled.div`
 
     display:flex;
@@ -131,6 +131,11 @@ const About = () => {
     const toggle = () => {
         setIsOpen(!isOpen)
     }
+
+    const head = '<body>'
+    const headClose = '</body>'
+
+  
     return (
         <div>
          <ParticlesBackground />
@@ -139,20 +144,40 @@ const About = () => {
         <Sidebar isOpen ={isOpen} toggle ={toggle}/>
         <Navbar toggle={toggle}/>  
 
-        <NameWrapper>
-         
-            <Name>Nischal Paudyal</Name>
-            <SubText>Full Stack Web Developer</SubText>
-            <Para>I am a senior majoring in Computer science and mathematics in the University of Mississippi. I am currently living in Johnston, IA. I am a well-organized person, problem solver, with high
+
+
+
+        <div className="section">
+            <div className="intro">
+                <h3 className="h1Style">{head}</h3>
+    {/* <h1 style={{color:'white', fontFamily:'inherit', fontWeight:600, fontSize:'auto'}}>Nischal Paudyal </h1>
+                <h2 style={{color:'white', fontFamily:'inherit', fontWeight:300}}>Full Stack Web Developer</h2> */}
+
+<div class="container">
+    <div class="box">
+
+        <div class="title">
+            <span class="block"></span>
+            <h1>Nischal Paudyal<span></span></h1>
+        </div>
+
+        <div class="role">
+            <div class="block"></div>
+            <p>Full stack web developer</p>
+        </div>
+
+    </div>
+</div>
+
+                <p style={{color:'#8c8686', fontFamily:'inherit', fontSize:'1.5rem', fontWeight:600}}>
+                I am a senior majoring in Computer science and mathematics in the University of Mississippi. I am currently living in Johnston, IA. I am a well-organized person, problem solver, with high
                 attention to detail. I play piano, I am a fan of any sports.
-            </Para>
-
-            <Para>
-                Interested in any web development spectrum and looking forward to work with ambitious people on ambitious projects.
-            </Para>
-            </NameWrapper>
-       
-
+                </p>
+                <p style={{color:'#8c8686', fontFamily:'inherit', fontSize:'1.5rem', fontWeight:600}}>Interested in any web development spectrum and looking forward to work with ambitious people on ambitious projects.
+</p>
+<p><div className="h2Style">{headClose}</div></p>
+            </div>
+        </div>
         <ContainerNew>
             <CardNew>
                  <ContactContainer>

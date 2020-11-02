@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+.h1Style {
+    font-family: 'La Belle Aurore', cursive;
+    color: rgb(56, 55, 56);
+    font-size: 1.5rem;
+
+}
+
+.h2Style {
+    font-family: 'La Belle Aurore', cursive;
+    color: rgb(56, 55, 56);
+    float: right !important;
+    font-size: 1.5rem;
+
+}
+
