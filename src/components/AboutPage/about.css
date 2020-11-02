@@ -320,7 +320,26 @@ h2 {
     color:white;
     font-weight: 700;
     font-style: inherit;
-    font-size: 24px;
+    font-size:1.5rem;
     margin-bottom: 15px;
   }
+  @media screen and (max-device-width: 480px) and (orientation: portrait){
+    p{
+      font-size: 1em;
+    }
+  }
+
+
+  @media screen and (max-device-width: 480px) and (orientation: portrait){
+    .social-media-list li {
+      position: relative;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 7%;
+    }
+  }
+
+ 
+
+
   
