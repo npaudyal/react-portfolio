@@ -11,6 +11,7 @@ const Navbar = ({toggle}) => {
            
                 <NavbarContainer>
                     
+                    
                     <NavLogo to="/">
                         Nischal
                     </NavLogo>

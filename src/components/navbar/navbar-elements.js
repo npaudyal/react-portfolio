@@ -44,6 +44,10 @@ font-family: 'Raleway', sans-serif;
 font-size: 35px;
 font-weight:600;
 
+&:hover {
+    border-bottom: 1px solid white;
+    }
+
 `;
 
 export const MobileIcon = styled.div`

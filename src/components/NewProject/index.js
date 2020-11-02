@@ -77,18 +77,18 @@ const Slider = () => {
   <div className="item"><img src ={Jodi} /></div>
 </div> */}
 <Cunt>
-<div className="wrapper">
-  <div className="cols">
-			<div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Jodi})`}}>
-						<div className="inner">
+<div className="wrapper1">
+  <div className="cols1">
+			<div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Jodi})`}}>
+						<div className="inner1">
 							<p>Jodi</p>
               <span>On play store</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>Jodi is a dating application built using flutter and firebase.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" shake={true} onClick={jodiOpener}/></p>
                           
@@ -97,32 +97,32 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Scrumptious})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Scrumptious})`}}>
+						<div className="inner1">
 							<p>Scrumptious</p>
               <span>A Recipe Planner</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>Scrumptious is a recipe planner application built using MERN stack.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" rotate={true} onClick={ScrumOpener}/></p>
                         </div>
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Ecommerce})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Ecommerce})`}}>
+						<div className="inner1">
 							<p>E-commerce</p>
               <span>An Online Shopping Platform </span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>E-commerce uses various features like StripeJS for payment and  many more.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" beat={true} onClick={eCommerceOpener}/></p>
 
@@ -130,16 +130,16 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${IDetector})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${IDetector})`}}>
+						<div className="inner1">
 							<p>iDetector</p>
               <span>VandyHacks Winner</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>iDetector is a gesture detecting application built using OpenCV(Python).</p>
                           <p><MdOpen color="white" fontSize="2.5rem" shake={true} onClick={iDetectorOpener}/></p>
 
@@ -147,16 +147,16 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Weather})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Weather})`}}>
+						<div className="inner1">
 							<p>Weather Man</p>
               <span>A Weather App</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>Weather Application built using NodeJs and MongoDB.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" rotate={true} onClick={weatherOpener}/></p>
 
@@ -164,16 +164,16 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Insta})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Insta})`}}>
+						<div className="inner1">
 							<p>Instagram Clone</p>
               <span>Social Media</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>Instagram clone is a mobile application built using flutter and firebase.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" beat={true} onClick={instaOpener}/></p>
 
@@ -181,16 +181,16 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Burger})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Burger})`}}>
+						<div className="inner1">
 							<p>Burger Builder</p>
               <span>Food Ordering App</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>Burger builder is built using ReactJS, NodeJS, and Firebase.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" shake={true} onClick={burgerOpener}/></p>
 
@@ -198,16 +198,16 @@ const Slider = () => {
 					</div>
 				</div>
 			</div>
-            <div className="col" ontouchstart="this.classList.toggle('hover');">
-				<div className="container">
-					<div className="front" style ={{backgroundImage:`url(${Customer})`}}>
-						<div className="inner">
+            <div className="col1" ontouchstart="this.classList.toggle('hover');">
+				<div className="container1">
+					<div className="front1" style ={{backgroundImage:`url(${Customer})`}}>
+						<div className="inner1">
 							<p>Web customer tracker</p>
               <span>Spring Application</span>
 						</div>
 					</div>
-					<div className="back">
-						<div className="inner">
+					<div className="back1">
+						<div className="inner1">
 						  <p>Web Customer Tracker uses Java, Springboot, Spring AOP, and SQL.</p>
                           <p><MdOpen color="white" fontSize="2.5rem" rotate={true} onClick={customerOpener}/></p>
 

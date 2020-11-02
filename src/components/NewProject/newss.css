@@ -8,7 +8,7 @@
           box-sizing: border-box;
 }
 
-h1{
+.h1Style{
   font-size: 2.5rem;
   font-family: 'Montserrat';
   font-weight: normal;
@@ -17,14 +17,14 @@ h1{
   margin: 2rem 0;
 }
 
-.wrapper{
+.wrapper1{
   width: 90%;
   margin: 0 auto;
   max-width: 80rem;
   
 }
 
-.cols{
+.cols1{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,21 +35,21 @@ h1{
           justify-content: center;
 }
 
-.col{
+.col1{
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
 }
 
-.container{
+.container1{
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 	-webkit-perspective: 1000px;
 	        perspective: 1000px;
 }
 
-.front,
-.back{
+.front1,
+.back1{
   background-size: cover;
   box-shadow: 0 2px 2px 0 rgba(29, 28, 28, 0.226);
   border-radius: 10px;
@@ -70,14 +70,14 @@ h1{
   
 }
 
-.back{
+.back1{
   background: #171718;
   background: -webkit-linear-gradient(45deg,  #0a0a0a 0%,#242525 100%);
   background: -o-linear-gradient(45deg,  #141414 0%,#262727 100%);
   background: linear-gradient(45deg,  #0a0a0a 0%,#1b1c1d 100%);
 }
 
-.front:after{
+.front1:after{
 	position: absolute;
     top: 0;
     left: 0;
@@ -92,8 +92,8 @@ h1{
             backface-visibility: hidden;
     border-radius: 10px;
 }
-.container:hover .front,
-.container:hover .back{
+.container1:hover .front1,
+.container1:hover .back1{
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -101,14 +101,14 @@ h1{
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-.back{
+.back1{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.inner{
+.inner1{
     -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
             transform: translateY(-50%) translateZ(60px) scale(0.94);
     top: 50%;
@@ -124,45 +124,45 @@ h1{
     z-index: 2;
 }
 
-.container .back{
+.container1 .back1{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-.container .front{
+.container1 .front1{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-.container:hover .back{
+.container1:hover .back1{
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-.container:hover .front{
+.container1:hover .front1{
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-.front .inner p{
+.front1 .inner1 p{
   font-size: 2rem;
   padding: 5px;
   margin-bottom: 2rem;
   position: relative;
 }
-.back .inner p {
+.back1 .inner1 p {
   padding-top:1rem;
 }
 
-.front .inner p:after{
+.front1 .inner1 p:after{
   content: '';
   width: 4rem;
   height: 2px;
@@ -177,26 +177,26 @@ h1{
   padding-bottom:2 px;
 }
 
-.front .inner span{
+.front1 .inner1 span{
   color: rgba(255,255,255,0.7);
   font-family: 'Montserrat';
   font-weight: 300;
 }
 
 @media screen and (max-width: 64rem){
-  .col{
+  .col1{
     width: calc(33.333333% - 2rem);
   }
 }
 
 @media screen and (max-width: 48rem){
-  .col{
+  .col1{
     width: calc(50% - 2rem);
   }
 }
 
 @media screen and (max-width: 32rem){
-  .col{
+  .col1{
     width: 100%;
     margin: 0 0 2rem 0;
   }

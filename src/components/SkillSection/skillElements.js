@@ -17,6 +17,16 @@ export const GlobeContainer = styled.div`
 	padding-left:30%;
 	padding-right:70%;
 	border-radius:50%;
+
+	@media screen and (max-device-width: 480px) and (orientation: portrait){
+  
+    top:40%;
+    left: 0;
+    width: 100%;
+    height:50%;
+	padding:0;
+  
+}
 	
 	
 `

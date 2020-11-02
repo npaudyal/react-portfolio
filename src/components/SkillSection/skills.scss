@@ -153,3 +153,13 @@ html,body{
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 85%;}}
 @keyframes progress-node{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  .skills-bar-container{
+    top: 20%;
+    left: 70%;
+    width: 20%;
+    
+  transform: translate(-75%, 20%);
+  }
+}

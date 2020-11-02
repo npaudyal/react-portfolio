@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import About from './components/AboutPage/index'
 import Skills from './components/SkillSection';
 import Term from './components/terminal';
-import NewProject from './components/NewProject';
 import Slider from './components/NewProject';
 function App() {
   return (
