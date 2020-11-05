@@ -15,14 +15,21 @@ import Weather from '../../images/Weather.png';
 import styled from 'styled-components';
 import MdOpen from 'react-ionicons/lib/MdOpen';
 
+
 export const Cunt = styled.div`
 
-    display:flex;
+	display:flex;
+	position: relative;
     justify-content:center;
     align-items:center;
 	padding-top:5%;
-	overflow-y:scroll;
-	overflow-x:hidden;
+	
+	
+@media screen and (max-width: 48rem){
+
+	overflow-y:auto;
+  
+}
 
 
 `
