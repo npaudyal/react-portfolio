@@ -21,6 +21,7 @@ const ContainerNew = styled.div`
     height:50vh;
     top:80%;
     left:50%;
+   overflow:auto;
 
 @media screen and (max-device-width: 480px) and (orientation: portrait){
 

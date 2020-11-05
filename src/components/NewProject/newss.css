@@ -194,11 +194,17 @@ h1{
   .col1{
     width: calc(33.333333% - 2rem);
   }
+  .front1:after {
+    height: 250%;
+  }
 }
 
 @media screen and (max-width: 48rem){
   .col1{
     width: calc(50% - 2rem);
+  }
+  .front1:after {
+    height: 250%;
   }
 }
 
