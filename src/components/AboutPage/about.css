@@ -1,4 +1,7 @@
-
+  .whole{
+   max-height: 102vh;
+    overflow:auto;
+  }
   
   .section-header {
     text-align: center;
@@ -9,6 +12,7 @@
     letter-spacing: 6px;
     color: #fff;
     margin-bottom: 25px;
+   
   }
   
   .contact-wrapper {
@@ -284,3 +288,7 @@
       
     }
   }
+
+  
+
+  

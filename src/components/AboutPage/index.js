@@ -21,13 +21,28 @@ const ContainerNew = styled.div`
     height:50vh;
     top:80%;
     left:50%;
-   overflow:auto;
+  
 
 @media screen and (max-device-width: 480px) and (orientation: portrait){
+
 
 padding-bottom:20%;
 
 
+}
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+
+    padding-bottom:20%;
+
+}
+
+@media screen and (max-width: 768px){
+
+    padding-bottom:20%;
+
+}
+@media screen and (max-width: 1200px){
+    padding-bottom:20%;
 
 }
 
@@ -55,6 +70,7 @@ box-shadow: 0 0 16px 0 rgba(255,255,255,0.2);
 
     width:90vw;
     height:20vh;
+    margin-bottom:20px;
     
     
 }
@@ -135,6 +151,7 @@ const SocialContainer = styled.div`
 
 
 }
+
 @media screen and (max-width: 1200px){
 
     padding:5px;
@@ -257,7 +274,7 @@ const About = () => {
     }
 
     return (
-        <div>
+        <>
          <ParticlesBackground />
         
         
@@ -266,7 +283,7 @@ const About = () => {
 
 
 
-
+        <div className="whole">
         <div className="section">
             <div className="intro">
                 <h3 className="h1Style">{head}</h3>
@@ -368,6 +385,7 @@ const About = () => {
 
 
         </div>
+        </>
 
         
     )

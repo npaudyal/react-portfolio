@@ -78,6 +78,7 @@
       align-items: center;
       height: 30px;
       margin-top: -10px;
+      
 
       .block {
         width: 0%;
@@ -87,6 +88,7 @@
         animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
         animation-delay: 2s;
         display: flex;
+        
       }
 
       p {
@@ -103,6 +105,7 @@
     }
   }
 }
+
 
 
 
