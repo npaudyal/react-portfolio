@@ -43,6 +43,7 @@ const CardNew = styled.div`
     height:30vh;
     position:relative;
     border-radius: 30px;
+    margin-bottom:20px;
    
     &:hover {
 
