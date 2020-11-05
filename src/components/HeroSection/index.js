@@ -43,7 +43,7 @@ const HeroSection = () => {
 
 
                 <HeroBtnWrapper>
-                    <Button to="terminal" onMouseEnter ={onHover} onMouseLeave={onHover}
+                    <Button to="/terminal" onMouseEnter ={onHover} onMouseLeave={onHover}
                     primary='true' dark='true'
                     >
                         Terminal {hover ? <ArrowForward /> : <ArrowRight />}
