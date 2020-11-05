@@ -68,6 +68,17 @@ export const MobileIcon = styled.div`
         color: #fff;
     }
 
+    @media screen and (max-width: 1024px) {
+        display:block;
+        position:absolute;
+        top:0;
+        right:0;
+        transform:translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor:pointer;
+        color: #fff;
+    }
+
 `;
 
 export const NavMenu = styled.ul`
@@ -119,6 +130,12 @@ export const NavBtn = styled.nav`
 
 
     @media screen and (max-width: 768px) {
+        display:none;
+    }
+    @media screen and (max-width: 1024px) {
+        display:none;
+    }
+    @media screen and (max-width: 1268px) {
         display:none;
     }
 
