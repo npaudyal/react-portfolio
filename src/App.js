@@ -3,7 +3,6 @@ import './App.css';
 import Home from './pages/index'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import About from './components/AboutPage/index'
-import Skills from './components/SkillSection';
 import Term from './components/terminal';
 import Slider from './components/NewProject';
 import TagCanvas from './components/NewSkills/index';
@@ -24,7 +23,7 @@ function App() {
 
      </Switch>
 
-     
+      
 
     
 

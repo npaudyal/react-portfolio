@@ -9,7 +9,7 @@
 
 }
 
-.container1 {
+.container111 {
     display: flex;
     position: relative;
     padding-left: 25%;
@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-device-width: 768px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 5%;
       height: 50%;
       width: 50%;
@@ -30,7 +30,7 @@
     }
   }
   @media screen and (max-width: 768px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 2%;
       height: 50%;
       padding-top: 10%;
@@ -39,7 +39,7 @@
     }
   }
   @media screen and (max-device-width: 1080px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 15%;
       padding-top: 20%;
       height: 50%;
@@ -48,7 +48,7 @@
     }
   }
   @media screen and (max-device-width: 960px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 5%;
       padding-right:5%;
       
@@ -57,7 +57,7 @@
   }
 
   @media screen and (max-device-width: 528px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 5%;
       height: 50%;
       width: 50%;
@@ -67,7 +67,7 @@
   }
 
   @media screen and (max-width: 528px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 15%;
       padding-top: 20%;
       height: 50%;
@@ -78,7 +78,7 @@
   }
 
   @media screen and (max-device-width: 420px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-left: 10%;
       padding-top:25%;
       height: 50%;
@@ -89,7 +89,7 @@
   }
 
   @media screen and (max-device-width: 375px) and (orientation: portrait){
-    .container1 {
+    .container111 {
       padding-top: 30%;
       padding-left:3%;
       

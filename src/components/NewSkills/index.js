@@ -151,7 +151,7 @@ class TagCanvas extends React.Component {
       
         <Sidebar isOpen ={this.isOpen} toggle ={this.toggle}/>
         <Navbar toggle={this.toggle}/> 
-    <div className="container1">
+    <div className="container111">
       <div style={styles} onMouseMove={this._onMouseMove.bind(this)}>
         {this.state.tags.map(v => (
          <h3 ><Tag
