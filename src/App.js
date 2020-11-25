@@ -6,6 +6,7 @@ import About from './components/AboutPage/index'
 import Skills from './components/SkillSection';
 import Term from './components/terminal';
 import Slider from './components/NewProject';
+import TagCanvas from './components/NewSkills/index';
 function App() {
   return (
     
@@ -14,15 +15,16 @@ function App() {
 
       <Route path="/" component={Home} exact />
       <Route path="/about" component={About} exact />
-      <Route path="/skills" component={Skills} exact />
       <Route path="/projects" component={Slider} exact />
       <Route path="/terminal" component={Term} exact />
+      <Route path="/skills" component={TagCanvas} exact />
+      
 
 
 
      </Switch>
-    
-   
+
+     
 
     
 

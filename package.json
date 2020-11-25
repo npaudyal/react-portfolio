@@ -25,9 +25,14 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
+    "react3dtagcloud": "^0.2.2",
     "sass-resources-loader": "^2.1.1",
     "styled-components": "^5.2.0",
-    "typewriter-effect": "^2.13.1"
+    "typescript": "^4.0.5",
+    "typewriter-effect": "^2.13.1",
+    "semantic-ui-react": "0.74.2",
+    "@tweenjs/tween.js": "18.4.2",
+    "three": "0.110.0"
   },
   "scripts": {
     "start": "react-scripts start",

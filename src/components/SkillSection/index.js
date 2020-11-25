@@ -6,6 +6,7 @@ import Sidebar from '../Sidebar';
 import Navbar from '../navbar';
 import { GlobeContainer } from './skillElements';
 import './globe.scss';
+import TagCloud from 'react3dtagcloud'
 
 
 const Skills = ({done}) => {
@@ -49,6 +50,7 @@ const Skills = ({done}) => {
       });
 
 
+      const tagName = ['java', 'javscript', 'C', 'C++', 'Python', 'React', 'Vue', 'redux', 'Spring', 'NodeJS', 'MongoDB']
 
 
  
@@ -59,12 +61,18 @@ const Skills = ({done}) => {
         
       
       <Sidebar isOpen ={isOpen} toggle ={toggle}/>
-      <Navbar toggle={toggle}/>  
-      <GlobeContainer>
+      <Navbar toggle={toggle}/> 
+
+      <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+		  <TagCloud tagName={tagName} radius = "200"></TagCloud>
+      </div>
+
+
+      {/* <GlobeContainer>
 <div class="particle">JavaScript</div>
 <div class="particle">GraphQL</div>
 <div class="particle">Node.JS</div>
-<div class="particle">MongoDB</div>
+<div class="particle">MongoDB</div>   
 <div class="particle">ReactJS</div>
 <div class="particle">HTML5</div>
 <div class="particle">CSS/SASS</div>
@@ -137,7 +145,7 @@ const Skills = ({done}) => {
 
      
       </ul>
-    
+     */}
 
       
   </>
