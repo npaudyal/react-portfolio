@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/index'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom'
 import About from './components/AboutPage/index'
 import Term from './components/terminal';
 import Slider from './components/NewProject';
