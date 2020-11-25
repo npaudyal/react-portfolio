@@ -50,7 +50,7 @@ export default class Tag extends React.Component {
           depth: `${this.state.z}px`,
           width: 50,
           opacity: (this.state.z + scale) / (scale * 1.5),
-          color: '#fcfcfc',
+          color: '#7f7777',
         }}
       >
         {this.state.text}
