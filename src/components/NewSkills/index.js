@@ -69,9 +69,9 @@ class TagCanvas extends React.Component {
   }
 
   toggle = () => {
-    this.setState({
-      isOpen:true
-    })
+    this.setState( prevState => ({
+      isOpen: !prevState.isOpen
+    }))
   }
 
  
@@ -149,7 +149,7 @@ class TagCanvas extends React.Component {
     <ParticlesBackground />
        
       
-        <Sidebar isOpen ={this.isOpen} toggle ={this.toggle}/>
+        <Sidebar isOpen ={this.state.isOpen} toggle ={this.toggle}/>
         <Navbar toggle={this.toggle}/> 
     <div className="container111">
       <div style={styles} onMouseMove={this._onMouseMove.bind(this)}>
