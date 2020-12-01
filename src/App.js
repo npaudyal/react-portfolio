@@ -6,6 +6,7 @@ import About from './components/AboutPage/index'
 import Term from './components/terminal';
 import Slider from './components/NewProject';
 import TagCanvas from './components/NewSkills/index';
+
 function App() {
   return (
     

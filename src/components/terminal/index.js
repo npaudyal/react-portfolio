@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import {motion} from 'framer-motion'
 import Sidebar from '../Sidebar';
 import Navbar from '../navbar';
 
@@ -26,7 +26,9 @@ import './terminal.css'
 	
 	return (
         
-       <>
+       < 
+	   
+	   >
 	   
 	   <div className="wa">
 	 <Sidebar isOpen ={isOpen} toggle ={toggle}/> 
@@ -37,7 +39,8 @@ import './terminal.css'
 
 	  
 		
-       
+
+		
 		<Terminal theme={themeVars} setTheme={setTheme}/>
         
         
@@ -430,6 +433,9 @@ class Field extends React.Component {
 					 onKeyDown={e => this.handleTyping(e)}
 					 tabIndex={0}
 					 onContextMenu={e => this.handleContextMenuPaste(e)}
+					 initial={{x: '-100vw'}}
+animate={{x:0}}
+transition={{type:'spring', delay:0.7}}
 					 >
 			{fieldHistory.map(({ text, isCommand, isError, hasBuffer }) => {
 				if (Array.isArray(text)) {

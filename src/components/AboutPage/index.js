@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import {GoLocation} from 'react-icons/go'
 import {AiOutlinePhone} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'
+import {motion} from 'framer-motion';
 import './about.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import './font.css';
@@ -283,8 +284,15 @@ const About = () => {
 
 
 
-        <div className="whole">
-        <div className="section">
+        <div className="whole"
+        >
+        <motion.div className="section"
+        
+        initial={{x: '100vw'}}
+        animate={{x:0}}
+        transition={{type:'spring', delay:0.5}}
+        
+        >
             <div className="intro">
                 <h3 className="h1Style">{head}</h3>
    
@@ -313,12 +321,17 @@ const About = () => {
 </p>
 <p><div className="h2Style">{headClose}</div></p>
             </div>
-        </div>
+        </motion.div>
    
 
 
-        
+      
         <ContainerNew>
+            <motion.div
+             initial={{x: '-100vw'}}
+             animate={{x:0}}
+             transition={{type:'spring', delay:0.7}}
+            >
             <CardNew>
                  <ContactContainer>
                      CONTACT
@@ -381,8 +394,8 @@ const About = () => {
           
                    
             </CardNew>
+            </motion.div>
         </ContainerNew> 
-
 
         </div>
         </>

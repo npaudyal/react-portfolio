@@ -28,12 +28,18 @@ export default class Tag extends React.Component {
   handleMouseLeave = () => {
     this.setState({ hover: false })
   }
+  
+  handleTouch = () => {
+    this.setState({hover: true})
+  }
+
 
   showExtra = () => {
     if (this.state.hover) {
       this.props.showMore()
     }
   }
+  
 
   render(){
     const scale = this.state.scale;
@@ -42,6 +48,8 @@ export default class Tag extends React.Component {
         onClick={this.props.showMore}
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
+        onTouchStart={this.handleMouseEnter}
+      
         style={{
 		  position: "absolute",
 		  

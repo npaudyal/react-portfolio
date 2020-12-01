@@ -2,6 +2,7 @@ import React from "react";
 import tags from "./tags.js";
 import Tag from "./tag.js";
 import ParticlesBackground from '../particleComponent';
+import {motion} from 'framer-motion'
 import Sidebar from '../Sidebar';
 import Navbar from '../navbar';
 import './font1.css'
@@ -61,7 +62,7 @@ class TagCanvas extends React.Component {
     this.state = {
       tags: this.adjustElems(tags),
       theta: 0,
-      rho: 0,
+      rho: 1,
       extraText: "",
       extraVisible: false,
       isOpen:false
@@ -115,7 +116,7 @@ class TagCanvas extends React.Component {
 
   setPos = (x, y) => {
     x = x * 2 / 300 - 1;
-    x = Math.abs(x) < 0.025 ? 0 : (x - 0.025 * this.sign(x)) / (1 - 0.025);
+    x = Math.abs(x) < 0.025 ? 2: (x - 0.025 * this.sign(x)) / (1 - 0.025);
     y = y * 2 / 300 - 1;
     y = Math.abs(y) < 0.025 ? 0 : (y - 0.025 * this.sign(y)) / (1 - 0.025);
     this.setState({
@@ -151,7 +152,12 @@ class TagCanvas extends React.Component {
       
         <Sidebar isOpen ={this.state.isOpen} toggle ={this.toggle}/>
         <Navbar toggle={this.toggle}/> 
-    <div className="container111">
+    <motion.div className="container111"
+    initial={{x: '100vw'}}
+    animate={{x:0, rotate:360}}
+    transition={{type:'spring', delay:0.7, duration:1.5}}
+   
+    >
       <div style={styles} onMouseMove={this._onMouseMove.bind(this)}>
         {this.state.tags.map(v => (
          <h3 ><Tag
@@ -164,7 +170,7 @@ class TagCanvas extends React.Component {
       </div>
       
       
-    </div>
+    </motion.div>
   </>
   );
 }

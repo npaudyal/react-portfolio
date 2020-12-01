@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@pmndrs/branding": "0.0.1",
+    "@react-spring/three": "9.0.0-rc.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -12,23 +14,31 @@
     "bootstrap": "^4.5.3",
     "compass": "^0.1.1",
     "compass-mixins": "^0.12.10",
+    "drei": "1.5.7",
+    "framer-motion": "^2.9.4",
     "jquery": "^3.5.1",
-    "mathjs": "^7.5.1",
+    "mathjs": "^7.6.0",
+    "postprocessing": "^6.18.0",
     "pug": "^3.0.0",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-animated-term": "^1.3.2",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
     "react-ionicons": "^3.1.4",
     "react-parallax-card": "^0.5.7",
-    "react-particles-js": "^3.3.0",
+    "react-particles-js": "^3.4.1",
+    "react-postprocessing": "1.4.0",
+    "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
+    "react-three-fiber": "5.0.0",
+    "redux": "^4.0.5",
     "sass-resources-loader": "^2.1.1",
-    "styled-components": "^5.2.0",
-    "typescript": "^4.0.5",
-    "typewriter-effect": "^2.13.1"
+    "styled-components": "^5.2.1",
+    "three": "0.120.1",
+    "typescript": "^4.1.2",
+    "typewriter-effect": "^2.17.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -53,6 +63,6 @@
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.3"
+    "sass-loader": "^10.1.0"
   }
 }

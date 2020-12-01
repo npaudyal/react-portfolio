@@ -4,6 +4,7 @@ import './newss.css'
 import ParticlesBackground from '../particleComponent'
 import Sidebar from'../Sidebar';
 import Navbar from '../navbar';
+import {motion} from 'framer-motion'
 import Jodi from '../../images/Jodi.png'
 import Scrumptious from '../../images/Scrumptious.png';
 import Burger from '../../images/BurgerBuilder.png';
@@ -75,9 +76,14 @@ const Slider = () => {
          <Navbar toggle={toggle}/>
                 
 <Cunt>
-<div className="wrapper1">
+<div className="wrapper1"
+
+>
   <div className="cols1">
-			<div className="col1">
+			<motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.3}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Jodi})`}}>
 						<div className="inner1">
@@ -94,8 +100,11 @@ const Slider = () => {
                         
 					</div>
 				</div>
-			</div>
-            <div className="col1">
+			</motion.div>
+            <motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.4}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Scrumptious})`}}>
 						<div className="inner1">
@@ -110,8 +119,11 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
-            <div className="col1" >
+			</motion.div>
+			<motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.5}} >
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Ecommerce})`}}>
 						<div className="inner1">
@@ -127,8 +139,11 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
-            <div className="col1">
+			</motion.div>
+            <motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.6}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${IDetector})`}}>
 						<div className="inner1">
@@ -144,8 +159,11 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
-            <div className="col1">
+			</motion.div>
+            <motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.7}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Weather})`}}>
 						<div className="inner1">
@@ -161,8 +179,11 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
-            <div className="col1">
+			</motion.div>
+            <motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.8}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Insta})`}}>
 						<div className="inner1">
@@ -178,8 +199,11 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
-            <div className="col1">
+			</motion.div>
+            <motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:0.9}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Burger})`}}>
 						<div className="inner1">
@@ -195,8 +219,11 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
-            <div className="col1">
+			</motion.div>
+            <motion.div className="col1"
+			initial={{x: '-100vw'}}
+			animate={{x:0}}
+			transition={{type:'spring', delay:1}}>
 				<div className="container1">
 					<div className="front1" style ={{backgroundImage:`url(${Customer})`}}>
 						<div className="inner1">
@@ -212,7 +239,7 @@ const Slider = () => {
                         </div>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 			</div>
             </div>
             </Cunt>
