@@ -26,9 +26,7 @@ import './terminal.css'
 	
 	return (
         
-       < 
-	   
-	   >
+       <>
 	   
 	   <div className="wa">
 	 <Sidebar isOpen ={isOpen} toggle ={toggle}/> 

@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import Navbar from '../components/navbar';
 import Sidebar from '../components/Sidebar';
+import {motion} from 'framer-motion'
 import HeroSection from '../components/HeroSection'
 
 import ParticlesBackground from '../components/particleComponent'
@@ -18,11 +19,16 @@ const Home = () => {
         <>
         <ParticlesBackground />
         
-        
+            
           <Sidebar isOpen ={isOpen} toggle ={toggle}/>
-          <Navbar toggle={toggle}/>  
+          
+          <Navbar toggle={toggle}/>
+          
+         <motion.div
+         
+         >
           <HeroSection />
-       
+          </motion.div>
              
         </>
     )
