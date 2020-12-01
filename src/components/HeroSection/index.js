@@ -28,7 +28,7 @@ const HeroSection = () => {
      <motion.div className="content"
      initial={{opacity:0}}
      animate ={{opacity:1}}
-     transition={{delay:1.2, duration:1.2}}>
+     transition={{delay:0.8, duration:0.8}}>
   <div className="content__container">
 
   <Typewriter
@@ -38,7 +38,6 @@ const HeroSection = () => {
     loop: true,
     
   }}
-  
 />
     
   </div>
@@ -48,7 +47,7 @@ const HeroSection = () => {
 <motion.div
              initial={{x: '-100vw'}}
              animate={{x:0}}
-             transition={{type:'spring', delay:1.2, duration:1.2}}
+             transition={{type:'spring', delay:0.8, duration:0.8}}
             >
                 <HeroBtnWrapper>
                     <Button to="/terminal" onMouseEnter ={onHover} onMouseLeave={onHover}

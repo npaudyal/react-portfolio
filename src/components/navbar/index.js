@@ -2,6 +2,7 @@ import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu,
      NavItem, NavLinks, NavBtn,  NavBtnLink} from './navbar-elements';
+import { motion } from 'framer-motion';
 
 const Navbar = ({toggle}) => {
     return (
@@ -37,7 +38,6 @@ const Navbar = ({toggle}) => {
                         
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/terminal">Terminal</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

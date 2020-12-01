@@ -35,18 +35,33 @@ export const NavLogo = styled(LinkR)`
 color: #fff;
 justify-self:flex-start;
 cursor: pointer;
+position:relative;
 font-size:1.5rem;
 display:flex;
 align-items: center;
-margin-left:24px;
+margin-left:0;
 text-decoration: none;
 font-family: 'Raleway', sans-serif;
 font-size: 35px;
 font-weight:600;
+transition:0.5s;
 
-&:hover {
-    border-bottom: 1px solid white;
-    
+
+    &::after{
+        position:absolute;
+        content:"";
+        top:100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
     }
 
 
@@ -86,7 +101,7 @@ export const NavMenu = styled.ul`
     align-items:center;
     list-style:none;
     text-align:center;
-    margin-right: -1000px;
+    margin-right: -1400px;
     
 
     @media screen and (max-width: 768px) {
@@ -103,8 +118,10 @@ export const NavItem = styled.li`
     
 `;
 export const NavLinks = styled(LinkR)`
+   
     color: #fff;
     display: flex;
+    position:relative;
     align-items: center;
     text-decoration:none;
     padding:0 1rem;
@@ -113,15 +130,31 @@ export const NavLinks = styled(LinkR)`
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight:450;
+    transition:0.5s;
 
+    &::after{
+        position:absolute;
+        content:"";
+        top:50%;
+        left: 0;
+        width: 100%;
+        background: white;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
 
+   
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 1px solid white;
         
     }
-    &:hover {
-        font-weight:900;
-    }
+   
 `;
 
 export const NavBtn = styled.nav`
